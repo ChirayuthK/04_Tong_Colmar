@@ -5,10 +5,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>04_Tong_Colmar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body>
-    <h1>04_Tong_Colmar</h1>
+<body class="bg-white font-sans pt-16">
+
+    <!-- Nav-Head Section -->
+
+    <nav class="flex justify-between text-2xl h-16 my-0">
+        <div class="px-[24px] pt-">
+            <img src="./images/ic-logo.svg" class="w-14 h-14 inline" alt="Logo">
+            <span>COLMAR</span>
+            <span class="text-gray-400">ACDEMY</span>
+        </div>
+        <ul class="flex justify-end gap-4 mr-6">
+            <li>On Campus</li>
+            <li>Online</li>
+            <li>or companies</li>
+            <li>Sign In</li>
+        </ul>
+    </nav>
+
+    <!-- hero section -->
+
+    <section class=" flex bg-gray-200 w-full h-max mt-0 px-6 py-8 gap-6">
+        <img src="./images/banner.jpg" alt="" class="w-[60%] mt-8">
+        <div class="text-gray-700 flex flex-col justify-center gap-3 w-full">
+            <p class="pt-8 px-4 text-3xl text-gray-700 font-bold">Learn something<br>new everyday</p>
+            <div class=" pt-8 px-4 text-xl text-gray-600 font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit.
+            </div>
+            <button class="bg-gray-900 text-gray-200">Start Here</button>
+        </div>
+    </section>
+
+    <!-- Info section -->
+
+    <section class="bg-white p-6 grid grid-cols-2 gap-6">
+        <div>
+            <img src="./images/information-main.jpg" alt="" class="w-[60%] mt-0">
+            <p class="pt-8 px-4 text-3xl text-gray-700 font-bold">It's doesn't hurt to keep practicing</p>
+            <p class=" pt-8 px-4 text-sm text-gray-700 font-bold">Curabitur vitae lorem id felis cursus tincidunt.
+                Nulla facilisi. Duis dignissim, odio eget facilisis vehicula. Nulla facilisi. Duis dignissim.</p>
+            <br>
+            <p class=" pt-8 px-4 text-sm text-gray-700 font-bold">Emanuel, Sr.Strategist at Hiring.com</p>
+        </div>
+        <div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+                <img src="./images/information-orientation.jpg" alt="">
+                <ul>
+                    <li>Orientation Date</li>
+                    <li>Tue 10/11 & Wed 10/12: 8am-3pm</li>
+                    <a href="">Read more</a>
+                </ul>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+                <img src="./images/information-campus.jpg" alt="">
+                <ul>
+                    <li>Our Campus</li>
+                    <li>Find which campus is close by you</li>
+                    <a href="">Read more</a>
+                </ul>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+                <img src="./images/information-guest-lecture.jpg" alt="">
+                <ul>
+                    <li>Orientation Date</li>
+                    <li>Tue 10/11 & Wed 10/12: 8am-3pm</li>
+                    <a href="">Read more</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+
+    <section class="bg-gray-200 grid justify-center w-full pt-16">
+        <h1 class="text-center text-3xl font-bold text-gray-800 mb-8">Start learning</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+            <div class="bg-white w-80">
+                <img src="./images/course-software.jpg" alt="Design" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900">Software engineering</h2>
+                    <p class="text-gray-500 mt-1">COURSES</p>
+                    <p class="text-gray-600 mt-1">Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg w-80">
+                <img src="./images/course-computer-art.jpg" alt="Design" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900">Computer art</h2>
+                    <p class="text-gray-500 mt-1">COURSES</p>
+                    <p class="text-gray-600 mt-1">Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                        Computer Animation</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg w-80">
+                <img src="./images/course-design.jpg" alt="Design" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900">Design</h2>
+                    <p class="text-gray-500 mt-1">COURSES</p>
+                    <p class="text-gray-600 mt-1">User Experience Design, User Research, Visual Design</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg w-80">
+                <img src="./images/course-data.jpg" alt="Design" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900">Data</h2>
+                    <p class="text-gray-500 mt-1">COURSES</p>
+                    <p class="text-gray-600 mt-1">Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg w-80">
+                <img src="./images/course-business.jpg" alt="Design" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900">Business</h2>
+                    <p class="text-gray-500 mt-1">COURSES</p>
+                    <p class="text-gray-600 mt-1">Product Development, Business Development, Startup</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg w-80">
+                <img src="./images/course-marketing.jpg" alt="Design" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900">Marketing</h2>
+                    <p class="text-gray-500 mt-1">COURSES</p>
+                    <p class=" text-gray-600 mt-1">Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thesis Section -->
+
+    <section class="bg-white w-full h-screen pt-8 flex h-[100%] mt-0 py-8 px-6"">
+        <div>
+            <h1 class=" text-center text-3xl font-bold text-gray-800 mb-8">Thesis Exhibit</h1>
+        <video class="w-[60%]">
+            <source src="./videos/thesis.mp4">
+        </video>
+        <p class="pt-8 px-4 text-2xl font-semibold text-gray-900">Reimagine Urban</p>
+        <p class=" pt-4 px-4 text-gray-500 mt-1">"Curabitur vitae lorem id felis cursus
+            tincidunt. Nulla facilisi. Duis dignissim, odio eget facilisis vehicula. Nulla facilisi. Duis
+            dignissim."</p>
+        </div>
+        <div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 p-6">
+                <img src="./images/thesis-fisma.jpg" alt="">
+                <ul>
+                    <li>Orientation Date</li>
+                    <li>Tue 10/11 & Wed 10/12: 8am-3pm</li>
+                    <a href="">Read more</a>
+                </ul>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 p-6">
+                <img src="./images/thesis-now-and-then.jpg" alt="">
+                <ul>
+                    <li>Our Campus</li>
+                    <li>Find which campus is close by you</li>
+                    <a href="">Read more</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <Footer class="flex px-6 justify-between bg-white text-gray-500 m-0">
+        <span>&copy; 2016 Colmar Academy. All right reserved</span>
+        <div class="flex justify-end">
+            <span>Terms</span>
+            <span>Privacy</span>
+        </div>
+    </Footer>
 </body>
 
 </html>
