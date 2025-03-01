@@ -2,182 +2,266 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>04_Tong_Colmar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
-<body class="bg-white font-sans pt-16">
+<body class="bg-[#F3F5F5] font-sans">
 
-    <!-- Nav-Head Section -->
+    <!-- Nav Head -->
 
-    <nav class="flex justify-between text-2xl h-16 my-0">
-        <div class="px-[24px] pt-">
-            <img src="./images/ic-logo.svg" class="w-14 h-14 inline" alt="Logo">
-            <span>COLMAR</span>
-            <span class="text-gray-400">ACDEMY</span>
+    <nav class="w-full bg-[#F3F5F5] fixed z-50">
+
+        <!-- Nav-Head Section Mobile-->
+
+        <div class="flex justify-between md:hidden h-16 py-4 px-4">
+            <a href="#"><img src="./images/ic-logo.svg" alt="" /></a>
+            <a href="#"><img src="./images/ic-on-campus.svg" alt="" /></a>
+            <a href="#"><img src="./images/ic-online.svg" alt="" /></a>
+            <a href="#"><img src="./images/ic-login.svg" alt="" /></a>
         </div>
-        <ul class="flex justify-end gap-4 mr-6">
-            <li>On Campus</li>
-            <li>Online</li>
-            <li>or companies</li>
-            <li>Sign In</li>
-        </ul>
-    </nav>
+
+        <!-- Nav-Head Section Desktop-->
+
+        <div class="hidden md:flex justify-between text-xl h-16 py-4 px-6">
+            <div class="flex">
+                <img src="./images/ic-logo.svg" class="w-8 h-8" alt="Logo" />
+                <span class="text-gray-800 font-bold">COLMAR</span>
+                <span class="text-gray-400">ACADEMY</span>
+            </div>
+            <div class="flex text-gray-600 text-xl gap-4">
+                <a href="">On campus</a>
+                <a href="">Online</a>
+                <a href="">or companies</a>
+                <a href="">Sign In</a>
+            </div>
+        </div>
+    </nav> <!-- end of nav head -->
 
     <!-- hero section -->
 
-    <section class=" flex bg-gray-200 w-full h-max mt-0 px-6 py-8 gap-6">
-        <img src="./images/banner.jpg" alt="" class="w-[60%] mt-8">
-        <div class="text-gray-700 flex flex-col justify-center gap-3 w-full">
-            <p class="pt-8 px-4 text-3xl text-gray-700 font-bold">Learn something<br>new everyday</p>
-            <div class=" pt-8 px-4 text-xl text-gray-600 font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit.
-            </div>
-            <button class="bg-gray-900 text-gray-200">Start Here</button>
+    <section class="grid grid-cols-1 items-center bg-[#D8D8D8] lg:grid-cols-[3fr_2fr] lg:py-8 lg:px-6">
+        <div class="overflow-hidden">
+            <img class="scale-[1.02]" src="./images/banner.jpg" alt="" />
         </div>
-    </section>
+        <div class="flex-row text-2xl text-gray-600 px-6 py-8 lg:ml-6">
+            <p class="text-[#4A4A4A] font-bold pb-4 text-3xl/10 lg:w-[90%] lg:text-5xl lg:leading-[4rem]">
+                Learn something<br />new everyday
+            </p>
+            <p class="text-[#4A4A4A] text-xl font-semibold lg:w-[80%] lg:text-[1.6rem] lg:leading-[2.5rem]">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <button
+                class="w-full h-12 px-2 mt-8 bg-[#9B9B9B] text-white text-lg font-bold lg:bg-[#4A4A4A] lg:text-2xl lg:font-semibold lg:w-[70%]">
+                Start here
+            </button>
+        </div>
+    </section> <!--end of hero section -->
 
     <!-- Info section -->
 
-    <section class="bg-white p-6 grid grid-cols-2 gap-6">
-        <div>
-            <img src="./images/information-main.jpg" alt="" class="w-[60%] mt-0">
-            <p class="pt-8 px-4 text-3xl text-gray-700 font-bold">It's doesn't hurt to keep practicing</p>
-            <p class=" pt-8 px-4 text-sm text-gray-700 font-bold">Curabitur vitae lorem id felis cursus tincidunt.
-                Nulla facilisi. Duis dignissim, odio eget facilisis vehicula. Nulla facilisi. Duis dignissim.</p>
-            <br>
-            <p class=" pt-8 px-4 text-sm text-gray-700 font-bold">Emanuel, Sr.Strategist at Hiring.com</p>
+    <section class="grid grid-cols-1 bg-[#F3F5F5] py-4 px-4 lg:grid-cols-[3fr_2fr] lg:px-6 lg:py-8 lg-px-4">
+
+        <!-- Info section : Desktop -->
+
+        <div class="hidden lg:grid lg:grid-row-4">
+            <img src="./images/information-main.jpg" alt="" class="" />
+            <p class="mt-8 text-5xl text-[#4A4A4A] font-bold">
+                It's doesn't hurt to keep practicing
+            </p>
+            <p class="pt-6 text-2xl text-[#4A4A4A] font-normal w-10/12">
+                "Curabitur vitae libero in ipsom porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
+                Sed non accumsan urna. Phasellus sed consequat ex. Etium eget magna laoreet, efficitur dolor consequat,
+                tristique ligula."
+            </p>
+            <br />
+            <p class="mb-8 text-xl text-[#4A4A4A] font-medium">
+                Emanuel, Sr.Strategist at Hiring.com
+            </p>
         </div>
-        <div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
-                <img src="./images/information-orientation.jpg" alt="">
-                <ul>
-                    <li>Orientation Date</li>
+
+        <!-- Info section : Mobile -->
+
+        <div class="grid grid-cols-1 text-[#4A4A4A] lg:ml-6 lg:pl-4 lg:pt-0 lg:self-start">
+            <div class="lg:pl-6 lg:grid lg:grid-cols-[35%_65%] lg:border lg:border-gray-200 place-items-center">
+                <img src="./images/information-orientation-mobile.jpg" alt="" class="block lg:hidden" />
+                <img src="./images/information-orientation.jpg" alt="" class="hidden lg:block" />
+                <ul class="pl-4 my-8 text-xl leading-10 lg:text-2xl">
+                    <li class="font-bold text-2xl lg:font-semibold lg:text-3xl">Orientation Date</li>
                     <li>Tue 10/11 & Wed 10/12: 8am-3pm</li>
-                    <a href="">Read more</a>
+                    <a href="" class="text-[#4A90E2]">Read more</a>
                 </ul>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
-                <img src="./images/information-campus.jpg" alt="">
-                <ul>
-                    <li>Our Campus</li>
+            <div class="lg:pl-6 lg:grid lg:grid-cols-[35%_65%] lg:border lg:border-gray-200 place-items-center">
+                <img src="./images/information-campus-mobile.jpg" alt="" class="block lg:hidden" />
+                <img src="./images/information-campus.jpg" alt="" class="hidden lg:block" />
+                <ul class="pl-4 my-8 text-xl leading-10 lg:text-2xl">
+                    <li class="font-bold text-2xl lg:font-semibold lg:text-3xl">Our Campus</li>
                     <li>Find which campus is close by you</li>
-                    <a href="">Read more</a>
+                    <a href="" class="text-[#4A90E2]">Read more</a>
                 </ul>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
-                <img src="./images/information-guest-lecture.jpg" alt="">
-                <ul>
-                    <li>Orientation Date</li>
-                    <li>Tue 10/11 & Wed 10/12: 8am-3pm</li>
-                    <a href="">Read more</a>
+            <div class="lg:bg-[#D8D8D8] lg:pl-6 lg:grid lg:grid-cols-[35%_65%] place-items-center">
+                <img src="./images/information-guest-lecture-mobile.jpg" alt="" class="block lg:hidden" />
+                <img src="./images/information-guest-lecture.jpg" alt="" class="hidden lg:block" />
+                <ul class="pl-4 my-8 text-xl leading-10 lg:text-2xl">
+                    <li class="font-bold text-2xl lg:font-semibold lg:text-3xl">Special guest lecture</li>
+                    <li>Join a keynote with Oliver Sack about music in medical teatment</li>
+                    <a href="" class="text-[#4A90E2]">Read more</a>
                 </ul>
             </div>
-        </div>
+        </div> <!--end of Info section : Mobile-->
+
     </section>
 
     <!-- Course Section -->
 
-    <section class="bg-gray-200 grid justify-center w-full pt-16">
-        <h1 class="text-center text-3xl font-bold text-gray-800 mb-8">Start learning</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
-            <div class="bg-white w-80">
-                <img src="./images/course-software.jpg" alt="Design" class="w-full h-48 object-cover">
+    <section class=" py-8 border border-gray-200">
+
+        <p class="text-center text-3xl font-bold text-[#4A4A4A]">
+            Start learning
+        </p>
+
+        <!--Course section : Mobile-->
+
+        <div class="grid place-items-center w-full px-4 mt-4 gap-y-2 text-xl text-[#4A4A4A] font-semibold lg:hidden">
+            <a href="" src="" class="w-full pl-4 pt-4 pb-6 bg-[#D8D8D8]">Software Engineering</a>
+            <a href="" src="" class="w-full pl-4 pt-4 pb-6 bg-[#D8D8D8]">Computer art</a>
+            <a href="" src="" class="w-full pl-4 pt-4 pb-6 bg-[#D8D8D8]">Design</a>
+            <a href="" src="" class="w-full pl-4 pt-4 pb-6 bg-[#D8D8D8]">Data</a>
+            <a href="" src="" class="w-full pl-4 pt-4 pb-6 bg-[#D8D8D8]">Business</a>
+            <a href="" src="" class="w-full pl-4 pt-4 pb-6 bg-[#D8D8D8]">Marketing</a>
+        </div> <!--End of Course section : Mobile-->
+
+        <!--Course section : Desktop-->
+
+        <div class="hidden lg:grid lg:grid-cols-[1fr_1fr_1fr] lg:px-[72px] lg:gap-8 lg:pt-8">
+            <a href="" src="" class="bg-[#F3F5F5] shadow-lg w-full">
+                <img src="./images/course-software.jpg" alt="Software Engineering" class="w-full h-48 object-cover" />
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900">Software engineering</h2>
+                    <h2 class="text-xl font-semibold text-[#4A4A4A]">
+                        Software engineering
+                    </h2>
                     <p class="text-gray-500 mt-1">COURSES</p>
-                    <p class="text-gray-600 mt-1">Web Development, Mobile Development, iOT, APIs</p>
+                    <p class="text-gray-600 mt-1">
+                        Web Development, Mobile Development, iOT, APIs
+                    </p>
                 </div>
-            </div>
-            <div class="bg-white shadow-lg w-80">
-                <img src="./images/course-computer-art.jpg" alt="Design" class="w-full h-48 object-cover">
+            </a>
+            <a href="" src="" class="bg-[#F3F5F5] shadow-lg w-full">
+                <img src="./images/course-computer-art.jpg" alt="Computer art" class="w-full h-48 object-cover" />
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900">Computer art</h2>
                     <p class="text-gray-500 mt-1">COURSES</p>
-                    <p class="text-gray-600 mt-1">Imaging & Design, Web Design, Motion Graphics & Visual Effects,
-                        Computer Animation</p>
+                    <p class="text-gray-600 mt-1">
+                        Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                        Computer Animation
+                    </p>
                 </div>
-            </div>
-            <div class="bg-white shadow-lg w-80">
-                <img src="./images/course-design.jpg" alt="Design" class="w-full h-48 object-cover">
+            </a>
+            <a href="" src="" class="bg-[#F3F5F5] shadow-lg w-full">
+                <img src="./images/course-design.jpg" alt="Design" class="w-full h-48 object-cover" />
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900">Design</h2>
                     <p class="text-gray-500 mt-1">COURSES</p>
-                    <p class="text-gray-600 mt-1">User Experience Design, User Research, Visual Design</p>
+                    <p class="text-gray-600 mt-1">
+                        User Experience Design, User Research, Visual Design
+                    </p>
                 </div>
-            </div>
-            <div class="bg-white shadow-lg w-80">
-                <img src="./images/course-data.jpg" alt="Design" class="w-full h-48 object-cover">
+            </a>
+            <a href="" src="" class="bg-[#F3F5F5] shadow-lg w-full">
+                <img src="./images/course-data.jpg" alt="Data" class="w-full h-48 object-cover" />
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900">Data</h2>
                     <p class="text-gray-500 mt-1">COURSES</p>
-                    <p class="text-gray-600 mt-1">Data Science, Big Data, SQL, Data Visualization</p>
+                    <p class="text-gray-600 mt-1">
+                        Data Science, Big Data, SQL, Data Visualization
+                    </p>
                 </div>
-            </div>
-            <div class="bg-white shadow-lg w-80">
-                <img src="./images/course-business.jpg" alt="Design" class="w-full h-48 object-cover">
+            </a>
+            <a href="" src="" class="bg-[#F3F5F5] shadow-lg w-full">
+                <img src="./images/course-business.jpg" alt="Business" class="w-full h-48 object-cover" />
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900">Business</h2>
                     <p class="text-gray-500 mt-1">COURSES</p>
-                    <p class="text-gray-600 mt-1">Product Development, Business Development, Startup</p>
+                    <p class="text-gray-600 mt-1">
+                        Product Development, Business Development, Startup
+                    </p>
                 </div>
-            </div>
-            <div class="bg-white shadow-lg w-80">
-                <img src="./images/course-marketing.jpg" alt="Design" class="w-full h-48 object-cover">
+            </a>
+            <a href="" src="" class="bg-[#F3F5F5] shadow-lg w-full">
+                <img src="./images/course-marketing.jpg" alt="Marketing" class="w-full h-48 object-cover" />
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900">Marketing</h2>
                     <p class="text-gray-500 mt-1">COURSES</p>
-                    <p class=" text-gray-600 mt-1">Analytics, Content Marketing, Mobile Marketing</p>
+                    <p class="text-gray-600 mt-1">
+                        Analytics, Content Marketing, Mobile Marketing
+                    </p>
                 </div>
-            </div>
+            </a>
         </div>
-    </section>
+
+    </section><!--End of Course section : Desktop-->
 
     <!-- Thesis Section -->
 
-    <section class="bg-white w-full h-screen pt-8 flex h-[100%] mt-0 py-8 px-6"">
-        <div>
-            <h1 class=" text-center text-3xl font-bold text-gray-800 mb-8">Thesis Exhibit</h1>
-        <video class="w-[60%]">
-            <source src="./videos/thesis.mp4">
-        </video>
-        <p class="pt-8 px-4 text-2xl font-semibold text-gray-900">Reimagine Urban</p>
-        <p class=" pt-4 px-4 text-gray-500 mt-1">"Curabitur vitae lorem id felis cursus
-            tincidunt. Nulla facilisi. Duis dignissim, odio eget facilisis vehicula. Nulla facilisi. Duis
-            dignissim."</p>
+    <section class="bg-[#F3F5F5] w-full h-[100%] pt-8 pb-6 lg:grid lg:grid-cols-[3fr_2fr] lg:px-6 lg:py-8">
+
+        <!-- Thesis section-->
+
+        <div class="lg:col-span-2">
+            <p class="text-center text-3xl font-bold text-[#4A4A4A] mb-8">
+                Thesis Exibits
+            </p>
         </div>
-        <div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 p-6">
-                <img src="./images/thesis-fisma.jpg" alt="">
-                <ul>
-                    <li>Orientation Date</li>
-                    <li>Tue 10/11 & Wed 10/12: 8am-3pm</li>
-                    <a href="">Read more</a>
-                </ul>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 p-6">
-                <img src="./images/thesis-now-and-then.jpg" alt="">
-                <ul>
-                    <li>Our Campus</li>
-                    <li>Find which campus is close by you</li>
-                    <a href="">Read more</a>
-                </ul>
+
+        <div class="grid grid-cols-1 lg:grid lg:grid-cols-1">
+            <video class="w-full h-auto lg:w-[100%]" autoplay loop playsinline>
+                <source src="./videos/thesis.mp4" type="video/mp4" />
+            </video>
+            <div class="hidden lg:grid lg:grid-cols-1">
+                <p class="mt-6 text-2xl font-semibold text-[#4A4A4A]">
+                    Reimagine Urban
+                </p>
+                <p class="mt-2 text-[#4A4A4A]">
+                    "Curabitur vitae libero in ipsom porttitor consequat. Aliquam et commodo lectus, nec consequat
+                    neque.
+                    Sed non accumsan urna. Phasellus sed consequat ex. Etium eget magna laoreet, efficitur dolor
+                    consequat,
+                    tristique ligula."
+                </p>
             </div>
         </div>
-    </section>
+        <div class="hidden lg:grid lg:gap-6 lg:self-start">
+            <div class="grid grid-cols-[35%_65%] ml-6 pl-6 bg-[#D8D8D8] p-4 ">
+                <img src="./images/thesis-fisma.jpg" alt="" />
+                <ul class="pl-4 my-8 text-[#4A4A4A]  text-xl leading-10 lg:text-2xl">
+                    <li class="text-3xl">Fisma: Design and Prototype</li>
+                    <li class="text-lg">Designer showcase of prototype product</li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-[35%_65%] ml-6 pl-6 p-4 ">
+                <img src="./images/thesis-now-and-then.jpg" alt="" />
+                <ul class="pl-4 my-8 text-[#4A4A4A] text-xl leading-10 lg:text-2xl">
+                    <li class="text-3xl">Now and Then</li>
+                    <li class="text-base">Research study about New York</li>
+                </ul>
+            </div>
+        </div>
 
-    <hr>
+    </section> <!--End of Thesis Section-->
 
-    <Footer class="flex px-6 justify-between bg-white text-gray-500 m-0">
+    <hr class="hidden lg:block" />
+
+    <footer class="flex justify-between px-6 py-4 text-sm text-[#4A4A4A] m-0">
         <span>&copy; 2016 Colmar Academy. All right reserved</span>
-        <div class="flex justify-end">
+        <div class="hidden lg:flex gap-x-4">
             <span>Terms</span>
             <span>Privacy</span>
         </div>
-    </Footer>
+    </footer>
 </body>
 
 </html>
